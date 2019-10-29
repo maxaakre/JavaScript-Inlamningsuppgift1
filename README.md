@@ -23,10 +23,12 @@ Ni ska även kunna förklara hur eran kod arbetar.
 
 
 Gå in på https://www.flickr.com/services/api/misc.api_keys.html och registrera ett konto, för att få tag på en API-Key
-Ni kommer då lotsas vidare och måste skapa ett konto. Är det problem med detta så kan ni testa om det går att använda mina uppgifter:
+Ni kommer då lotsas vidare och måste skapa ett konto. 
+Är det problem med detta så kan ni testa om det går att använda mina uppgifter:
 Fråga mig då så hjälper jag er igång.
 
-Här hittar ni API dokumentation och det finns även Developer Communities https://www.flickr.com/services/developer/community/
+Här hittar ni API dokumentation https://www.flickr.com/services/api/flickr.photos.search.html
+och det finns även Developer Communities https://www.flickr.com/services/developer/community/
 
 
 
