@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flickr search engine</title>
+    <link rel="stylesheet" href="/css/Style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <form action="">
+            <input type="text" id="searchbox" placeholder="Search for your photos">
+            <button type="submit" value="Search">Search</button>
+        </form>
+
+        <p>Show how many pictures you want to see:</p>
+        <select name="showImages" id="outputImages" value="Show Images">
+
+            <option value="20" id="20">20 Images</option>
+            <option value="30" id="30">30 Images</option>
+            <option value="40" id="40">40 Images</option>
+            <option value="50" id="50">50 Images</option>
+            <option value="100" id="100">100 Images</option>
+        </select>
+    </header>
+    <div class="gridimages">
+        <div id="output"></div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
