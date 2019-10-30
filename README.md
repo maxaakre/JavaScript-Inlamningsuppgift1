@@ -30,7 +30,7 @@ Fråga mig då så hjälper jag er igång.
 Här hittar ni API dokumentation https://www.flickr.com/services/api/flickr.photos.search.html
 och det finns även Developer Communities https://www.flickr.com/services/developer/community/
 
-Jag har även uppdaterat presentationen om REST API. Den ligger i denna repositorien. 
+Det ligger även en ny presentation i denna repositorien. 
 
 Lycka till!
 
