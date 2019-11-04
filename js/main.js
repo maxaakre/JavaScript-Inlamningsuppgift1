@@ -13,14 +13,14 @@ searchFunction = e => {
 
 getImages = (inputValue, select) => {
     document.querySelector('.close-box').addEventListener('click', () => { //close kryset för att stänga ner lightbox
-        document.querySelector('#light-box').style.display = 'none';// =display none
+        document.querySelector('#light-box').style.display = 'none';// = display none
     })
 
 
-    let url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=f0ba267d7ad25a32cb67fab3494fbc83&tags=${inputValue}&per_page=${select}&format=json&nojsoncallback=1`; // en fetch med Vilket sökord som användaren skriver in
+    let url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=70f055a054a3f8fd8f41eda7d3679eb8&tags=${inputValue}&per_page=${select}&format=json&nojsoncallback=1`; // en fetch med Vilket sökord som användaren skriver in
 
     fetch(url)
-        .then(res => res.json()) //Gör om till json format
+        .then(res => res.json()) //Gör om till json format från js object
         .then(data => {
             data.photos.photo.forEach(item => {
                 let url = `https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`;
@@ -28,19 +28,16 @@ getImages = (inputValue, select) => {
                 
                 <img src="${url}">
            
-             
-    
                 `;
 
+                document.getElementById("output").innerHTML += output;// visar bilder på sidan i output
 
-
-
-                document.getElementById("output").innerHTML += output;
+                document.querySelector('#output').style.display = 'grid'; // lägger ut det i grid 
 
 
 
                 const imageArray = document.querySelectorAll("#output img")
-                imageArray.forEach(img => img.addEventListener('click', handleLightbox))
+                imageArray.forEach(img => img.addEventListener('click', handleLightbox)) //gör så att när du klickar så görs funktionen
                 function handleLightbox(e) {
                     let lightboxImage = document.querySelector('#lightbox-image');
                     let newSource = e.target.getAttribute('src') // tar source länken från bilden som klickas
