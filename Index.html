@@ -11,10 +11,13 @@
 </head>
 
 <body>
-
+    <div id="light-box">
+        <span class="close-box">&times;</span>
+        <img src="" id="lightbox-image">
+    </div>
     <header>
         <form action="">
-            <input type="text" id="searchbox" placeholder="Search for your photos">
+            <input type="text" id="searchbox" autocomplete="off" placeholder="Search for your photos">
             <button type="submit" value="Search">Search</button>
         </form>
 
@@ -27,9 +30,11 @@
             <option value="50" id="50">50 Images</option>
             <option value="100" id="100">100 Images</option>
         </select>
+
     </header>
     <div class="gridimages">
-        <div id="output"></div>
+        <div id="output">
+        </div>
     </div>
 
     <script src="/js/main.js"></script>
