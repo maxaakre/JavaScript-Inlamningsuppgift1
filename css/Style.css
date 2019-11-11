@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
- *{
+/* Min font-family Länk */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap'); 
+
+/*Generellla inställningar på sidan*/
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/* inställningar för body */
 body{
     width:100%;
     height: 100vh;
@@ -14,7 +17,7 @@ body{
     flex-flow: column;  
     background: #dbcaa4;
 }
-/* Detta är min form */
+/* Detta är min form som ligger i header */
 header{
     display: flex;
     flex-flow: column;
@@ -42,34 +45,7 @@ input[type="text"]{
 input::placeholder{
     text-align: center;
 }
-/* Det här är min spinner som roterar vid laddning */
-.spinner {
-    display: none;
-    position: relative;
-    margin-top: 100px;
-  }
-  .spinner svg {
-    display: block;
-    animation: flip 0.4s infinite;
-    width: 60px;
-    margin:auto;
-    }
-    .spinner svg path{
-    fill: #000;    
-    }
-  
-  @keyframes flip {
-    0% {
-      transform: rotateZ(0deg);
-     
-    }
-    100% {
-      transform: rotateZ(180deg);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
 
-  }
-  /* Spinner slut */
 /* Sök knappen */
 button{
     width: 100px;
@@ -100,8 +76,39 @@ select{
     cursor: pointer;
     border: 1px solid black;
     margin: auto;
+    font-weight: 800;
 }
-/* Här läggs mina bilder */
+
+/* Det här är min spinner som roterar vid laddning */
+.spinner {
+    display: none;
+    position: relative;
+    margin-top: 100px;
+  }
+  .spinner svg {
+    display: block;
+    animation: flip 0.4s infinite;
+    width: 60px;
+    margin:auto;
+    }
+    .spinner svg path{
+    fill: #000;    
+    }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateZ(0deg);
+     
+    }
+    100% {
+      transform: rotateZ(180deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+  }
+/* Spinner slut */
+/* Header och Form slut */
+/* Här läggs mina bilder ut på sidan*/
  #output{
     width: 100%; 
     grid-template-columns: 1fr;
@@ -111,12 +118,13 @@ select{
     display: none;
     background: #dbcaa4;  
 }
-/* Mina bilder */
+/* Bild inställningar som läggs in på sidan */
  img{
     width: 90%;  
     margin: auto;
     display:grid;
     border: 2px solid black;
+    cursor: pointer;
 } 
 /* Detta är min lightbox som visas när man trycker på bilderna */
  #light-box{
@@ -144,12 +152,12 @@ select{
   
   
 }
-/* Min lightbox inställningar för storlek */
+/* Min lightbox inställningar för storlek på bilden */
 #light-box img{
     margin: auto;
     display: block;
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    
     cursor: pointer;
 
 }
