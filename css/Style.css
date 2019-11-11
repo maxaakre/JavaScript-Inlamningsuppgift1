@@ -42,6 +42,7 @@ input[type="text"]{
     margin: 1rem auto;
     font-size: 20px;
 }
+/* Min Placeholder i text fältet */
 input::placeholder{
     text-align: center;
 }
@@ -156,7 +157,7 @@ select{
 #light-box img{
     margin: auto;
     display: block;
-    width: 50%;
+    width: 90%;
     
     cursor: pointer;
 
@@ -178,6 +179,12 @@ select{
 
     button{
      font-size: 25px;
+    }
+
+    #light-box img{
+        
+        width: 50%;
+    
     }
 
 }
