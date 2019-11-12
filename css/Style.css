@@ -184,6 +184,7 @@ select{
     #light-box img{
         
         width: 50%;
+        height: 100vh;
     
     }
 
